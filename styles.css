@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-body {
+
+
+body 
+{
     background-color: var(--background);
     margin: 0;
     padding: 0;
@@ -13,7 +16,8 @@ body {
 \*~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
 /*Default theme*/
-:root{
+:root
+{
     --background: #161618;
     --titleBackground: #232325;
     --text: white;
@@ -41,7 +45,8 @@ body {
     @Navigation Bar
 \*~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
-#header {
+#header 
+{
     position: relative;
     width: 100%;
     height: 42px;
@@ -51,7 +56,8 @@ body {
     overflow: hidden;
 }
 
-#headerDiv {
+#headerDiv 
+{
     position: relative;
     float: right;
     bottom: 12px;
@@ -68,7 +74,8 @@ body {
     position: absolute;
 }
 /*Removes bullet points from the list*/
-#headerDiv ul {
+#headerDiv ul 
+{
     list-style: none;
     padding-right: 43px;
 }
@@ -163,9 +170,10 @@ body {
     overflow: hidden;
 }
 
-#banner {
+#banner
+ {
     width: 100%;
-    height: 100%;
+    height: 50px;
     min-height: 518px;
     min-width: 1920px;
     user-select: none;
@@ -173,32 +181,44 @@ body {
     overflow: hidden;
 }
 
-#bannerTitle {
+#bannerTitle 
+{
     position: relative;
     max-width: 90%;
-    bottom: 75.5%;
+    bottom: 100%;
     display: block;
     margin-right: auto;
     margin-left: auto;
     user-select: none;
+    margin-top: 0px;
+    
 }
 
-#bannerCatchphrase {
-    position: relative;
-    max-width: 100%;
+
+
+#bannerCatchphrase
+ {
+    position: absolute;
     color: white;
-    font-family: 'Sarabun', sans-serif;
+    font-family: Gang Of Three;
+    src: url(gangofthree.ttf);
     font-weight: 700;
-    font-size: 40px;
+    font-size: 65px;
     letter-spacing: 3px;
     text-align: center;
     user-select: none;
-    bottom: 86.5%;
-    display:hidden;
+    bottom: 150px;
+    margin-bottom: 150px;
+    left: 50%;
+    transform: translateX(-40%);
+    margin-top: 0px auto;
+    display: hidden;
 }
 
+
 /*Line between the Main Content and Banner*/
-#bannerGradientLine {
+#bannerGradientLine
+ {
     position: relative;
     height:2px;
     width: 100%;
@@ -217,14 +237,15 @@ main {
 footer {
     width: 100%;
     height: 42px;
-    background-color: #232325;
+    background-color: #aeaeae;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: 25px;
 }
 
-footer p {
+footer p 
+{
     color: #b0b0b0;
     font-family: 'Sarabun', sans-serif;
 }
@@ -235,32 +256,40 @@ footer p {
 
 #lightModeLabel {
     font-family: 'Sarabun', sans-serif;
-    color: white;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*\
-    @Socials
+            @Socials
 \*~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
-footer div img {
+footer div img 
+{
     height: 30px;
-    width: 30px;
+    width: 50px;
     padding-left: 5px;
     transition: all 160ms cubic-bezier(.38,.32,.25,1);
-} footer div img:hover {
+    
+} 
+
+footer div img:hover 
+{
     transition: all 160ms cubic-bezier(.38,.32,.25,1);
     transform: scale(1.2);
     opacity: 0.6;
 }
 
-#socialMediaDiv {
+#socialMediaDiv 
+{
     user-select: none;
     position: relative;
     padding-left: 20px;
     bottom: 3px;
 }
 
-#twitterIcon {
+#twitterIcon 
+{
     position: relative;
     top: 4px;
     right: 4px;
@@ -285,7 +314,8 @@ footer div img {
         color: hsl(240, 75%, 77%);
         transition: 0.2s;
     }
-    #mobile-menu {
+    #mobile-menu 
+    {
         display: block; /* Initially, the menu is always displayed */
         position: absolute;
         top: 62px; /* Adjust as needed to position the menu below the header */
@@ -332,11 +362,13 @@ footer div img {
         overflow: visible;
     }
 
-    #bannerCatchphrase {
+    #bannerCatchphrase 
+    {
         font-size: 28px;
         bottom: 80%;
         padding-left: 10px;
         padding-right: 10px;
+        font-family: 'Metropolis', sans-serif;
     }
 
     #header {
